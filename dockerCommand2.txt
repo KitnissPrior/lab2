@@ -1,7 +1,8 @@
 docker run \
   --name jenkins-docker \
-  --rm \
+  --rm -c \
   --detach \
+  --volume bigBoy:/etc
   --privileged \
   --network jenkins \
   --network-alias docker \
